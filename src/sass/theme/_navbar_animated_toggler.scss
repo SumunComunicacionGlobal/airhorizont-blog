@@ -1,0 +1,68 @@
+.navbar-toggler {
+
+  .navbar-animated-toggler {
+    background-image: none !important;
+    position: relative;
+    width: 60px;
+    height: 2em;
+
+  }
+
+  .slot {
+      height: 3px;
+      width: 100%;
+      background-color: $primary;
+      position: absolute;
+      left: 0;
+      transition: $transition-base;
+  }
+
+  .slot-1 {
+    top: 33%;
+  }
+
+  .slot-2 {
+    top: 66%;
+  }
+
+  &:hover {
+
+    .slot {
+
+    }
+
+    .slot-1 {
+      width: 80%;
+    }
+
+    .slot-2 {
+      width: 80%;
+      left: 20%;
+    }
+  
+  }
+
+}
+
+.menu-open .navbar-toggler {
+
+  .slot-1 {
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%;
+  }
+
+  .slot-2 {
+    top: 50%;
+    transform: rotate(-45deg);
+    left: 0;
+    width: 100%;
+  }
+
+}
+
+
+.navbar-dark .navbar-animated-toggler .slot {
+  background-color: $navbar-dark-color;
+}
+

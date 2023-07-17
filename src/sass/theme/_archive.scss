@@ -1,0 +1,55 @@
+.hfeed {
+
+    article {
+		
+		> .card {
+
+			.card-img-top,
+			.card-img-top img {
+				object-fit: cover;
+			}
+
+			@include media-breakpoint-up(md) {
+				flex-direction: row;
+				margin-bottom: 1px;
+				align-items: stretch;
+
+				.card-img-top {
+					width: 60%;
+				}
+
+				.card-body {
+					padding: $spacer * 3;
+				}
+			}
+
+		}
+
+		@include media-breakpoint-up(md) {
+			&:nth-child(even) {
+
+				> .card {
+					flex-direction: row-reverse;
+				}
+			}
+
+		}
+    }
+}
+
+.post-navigation {
+	margin-top: $spacer * 2;
+
+	.nav-links {
+		font-weight: $font-weight-bold;
+	}
+
+}
+
+.hfeed-post {
+	
+	.wp-post-image {
+		object-fit: cover;
+		height: 100%;
+	}
+}

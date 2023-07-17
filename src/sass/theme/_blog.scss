@@ -1,0 +1,13 @@
+.single-post {
+
+    @include media-breakpoint-up(sm) {
+
+        .entry-content {
+            padding: 0 $spacer * 3;
+            border-left: 1px solid $border-color;
+            border-right: 1px solid $border-color;
+            padding-bottom: $spacer * 6;
+        }
+
+    }
+}
